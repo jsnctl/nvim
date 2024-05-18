@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) 
 
   use('tpope/vim-fugitive')
+  use("fatih/vim-go")
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -23,10 +24,11 @@ return require('packer').startup(function(use)
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
 
+	ensure_installed = {'gopls'},
 		  {'neovim/nvim-lspconfig'},
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
-end)  
+end)
