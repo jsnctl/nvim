@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 
   use('tpope/vim-fugitive')
   use("fatih/vim-go")
+  use("airblade/vim-gitgutter")
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -31,4 +32,5 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
 end)
