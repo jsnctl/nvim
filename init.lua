@@ -1,2 +1,2 @@
-require("jsnctl")
-
+require("jsnctl.default")
+require("jsnctl.lazy")
