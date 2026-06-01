@@ -1,8 +1,8 @@
 return {
-  "dundalek/lazy-lsp.nvim",
+  "VonHeikemen/lsp-zero.nvim",
+  branch = "v3.x",
   dependencies = {
     "neovim/nvim-lspconfig",
-    {"VonHeikemen/lsp-zero.nvim", branch = "v3.x"},
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/nvim-cmp",
   },
@@ -16,7 +16,5 @@ return {
         preserve_mappings = false
       })
     end)
-
-    require("lazy-lsp").setup { excluded_servers = {"lua_ls"} }
   end,
 }
